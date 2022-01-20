@@ -1,10 +1,11 @@
 
 <style>
+  :root {
+    --primaryColor: rgb(227, 6, 19);
+    --primaryFont: sans-serif
+  }
   :focus:not(:focus-visible) {
     outline: none
-  }
-  body {
-    overflow: hidden
   }
   .maxWidth {
     padding: 2rem;
@@ -96,6 +97,16 @@
       overflow: hidden
     }
   }
+  .button {
+    background-color: var(--primaryColor);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    color: white;
+    border: 2px solid
+  }
+  .button:hover {
+    background-color: transparent
+  }
 </style>
 
 <template>
@@ -111,22 +122,22 @@
           <div @click="nav" v-html="require('../assets/svg/menu.svg?include')" />
         </div>
         <div class="nav--container">
-          <nuxt-link to="/" class="nav--link">
+          <nuxt-link to="#" class="nav--link">
             Home
           </nuxt-link>
-          <nuxt-link to="/" class="nav--link">
+          <nuxt-link to="#how-we-can-help" class="nav--link">
             How We Can Help
           </nuxt-link>
-          <nuxt-link to="/" class="nav--link">
+          <nuxt-link to="#give-back" class="nav--link">
             Give Back
           </nuxt-link>
-          <nuxt-link to="/" class="nav--link">
+          <nuxt-link to="#events" class="nav--link">
             Events
           </nuxt-link>
-          <nuxt-link to="/" class="nav--link">
+          <nuxt-link to="#news" class="nav--link">
             News
           </nuxt-link>
-          <nuxt-link to="/" class="nav--link">
+          <nuxt-link to="https://eshop.solent.ac.uk/product-catalogue/public-and-alumni-services/donations/donate-online-now" class="nav--link button primary">
             Donate
           </nuxt-link>
         </div>
