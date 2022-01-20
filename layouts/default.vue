@@ -122,24 +122,24 @@
           <div @click="nav" v-html="require('../assets/svg/menu.svg?include')" />
         </div>
         <div class="nav--container">
-          <nuxt-link to="#" class="nav--link">
+          <a href="#" class="nav--link">
             Home
-          </nuxt-link>
-          <nuxt-link to="#how-we-can-help" class="nav--link">
+          </a>
+          <a href="#how-we-can-help" class="nav--link">
             How We Can Help
-          </nuxt-link>
-          <nuxt-link to="#give-back" class="nav--link">
+          </a>
+          <a href="#give-back" class="nav--link">
             Give Back
-          </nuxt-link>
-          <nuxt-link to="#events" class="nav--link">
+          </a>
+          <a href="#events" class="nav--link">
             Events
-          </nuxt-link>
-          <nuxt-link to="#news" class="nav--link">
+          </a>
+          <a href="#news" class="nav--link">
             News
-          </nuxt-link>
-          <nuxt-link to="https://eshop.solent.ac.uk/product-catalogue/public-and-alumni-services/donations/donate-online-now" class="nav--link button primary">
+          </a>
+          <a href="https://eshop.solent.ac.uk/product-catalogue/public-and-alumni-services/donations/donate-online-now" class="nav--link button primary">
             Donate
-          </nuxt-link>
+          </a>
         </div>
       </nav>
     </header>
