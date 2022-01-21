@@ -4,6 +4,10 @@
     --primaryColor: rgb(227, 6, 19);
     --primaryFont: sans-serif
   }
+  body {
+    font-family: var(--primaryFont);
+    margin: 0
+  }
   :focus:not(:focus-visible) {
     outline: none
   }
@@ -99,13 +103,20 @@
   }
   .button {
     background-color: var(--primaryColor);
-    padding: .75rem 1rem;
     border-radius: .25rem;
     color: white;
-    border: 2px solid
+    border: 2px solid var(--primaryColor)
   }
   .button:hover {
     background-color: transparent
+  }
+  footer {
+    background-color: var(--primaryColor);
+    color: white
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
   }
 </style>
 
@@ -146,6 +157,44 @@
     <main>
       <nuxt keep-alive />
     </main>
+    <footer>
+      <div class="maxWidth footer-inner">
+        <div>
+          <h3>
+            Get In Touch
+          </h3>
+          <p>
+            Facebook
+          </p>
+          <p>
+            Instagram
+          </p>
+          <p>
+            Twitter
+          </p>
+          <p>
+            YouTube
+          </p>
+        </div>
+        <div>
+          <h3>
+            Quick Links
+          </h3>
+          <p>
+            Find Us
+          </p>
+          <p>
+            Contact Us
+          </p>
+          <p>
+            Press Office
+          </p>
+          <p>
+            Solent Global
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
